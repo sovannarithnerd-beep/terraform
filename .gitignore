@@ -2,5 +2,5 @@
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
-gcp/gcp-ha-k8s.json:1
+./gcp/gcp-ha-k8s.json:1
 
