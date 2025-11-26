@@ -1,0 +1,142 @@
+{
+  "bastion_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "34.101.73.75"
+  },
+  "compute": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        [
+          "object",
+          {
+            "name": "string",
+            "private_ip": "string",
+            "role": "string"
+          }
+        ],
+        [
+          "object",
+          {
+            "name": "string",
+            "private_ip": "string",
+            "role": "string"
+          }
+        ],
+        [
+          "object",
+          {
+            "name": "string",
+            "private_ip": "string",
+            "role": "string"
+          }
+        ],
+        [
+          "object",
+          {
+            "name": "string",
+            "private_ip": "string",
+            "role": "string"
+          }
+        ],
+        [
+          "object",
+          {
+            "name": "string",
+            "private_ip": "string",
+            "role": "string"
+          }
+        ],
+        [
+          "object",
+          {
+            "name": "string",
+            "private_ip": "string",
+            "role": "string"
+          }
+        ]
+      ]
+    ],
+    "value": [
+      {
+        "name": "master-10.0.0.15",
+        "private_ip": "10.0.0.15",
+        "role": "master"
+      },
+      {
+        "name": "master-10.0.0.17",
+        "private_ip": "10.0.0.17",
+        "role": "master"
+      },
+      {
+        "name": "master-10.0.0.16",
+        "private_ip": "10.0.0.16",
+        "role": "master"
+      },
+      {
+        "name": "worker-10.0.0.18",
+        "private_ip": "10.0.0.18",
+        "role": "worker"
+      },
+      {
+        "name": "worker-10.0.0.14",
+        "private_ip": "10.0.0.14",
+        "role": "worker"
+      },
+      {
+        "name": "worker-10.0.0.19",
+        "private_ip": "10.0.0.19",
+        "role": "worker"
+      }
+    ]
+  },
+  "control_plane_ips": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "10.0.0.15",
+      "10.0.0.17",
+      "10.0.0.16"
+    ]
+  },
+  "lb_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "34.50.101.162"
+  },
+  "network_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ha-k8s-vpc"
+  },
+  "subnet_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ha-k8s-subnet"
+  },
+  "worker_ips": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "10.0.0.18",
+      "10.0.0.14",
+      "10.0.0.19"
+    ]
+  }
+}
